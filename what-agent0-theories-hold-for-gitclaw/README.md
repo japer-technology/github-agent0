@@ -8,6 +8,7 @@ This folder contains a two-part examination of how Agent Zero's architectural de
 |------|-------------|
 | [ANALYSIS.md](./ANALYSIS.md) | Deep theoretical analysis of Agent Zero's 7 core design theories, with evaluation of each theory's applicability to .GITCLAW |
 | [REPORT.md](./REPORT.md) | Actionable adaptation recommendations — proposed architecture, directory structures, workflows, risk matrix, and implementation priorities |
+| [GITHUB-AS-INFRASTRUCTURE-FEASIBILITY.md](./GITHUB-AS-INFRASTRUCTURE-FEASIBILITY.md) | Full feasibility study: Can Agent Zero run on GitHub's infrastructure as .GITCLAW? Component-by-component mapping, reusable code inventory, working workflow examples, cost model, and architecture diagrams |
 
 ## Key Findings
 
@@ -34,7 +35,9 @@ This folder contains a two-part examination of how Agent Zero's architectural de
 
 ## Reading Order
 
-Start with **ANALYSIS.md** for the theoretical foundation, then proceed to **REPORT.md** for the practical architecture.
+1. **ANALYSIS.md** — Theoretical foundation (what are A0's design theories?)
+2. **REPORT.md** — Practical architecture (how do those theories become .GITCLAW?)
+3. **GITHUB-AS-INFRASTRUCTURE-FEASIBILITY.md** — Infrastructure reality (can it actually run on GitHub?)
 
 ---
 *Generated: February 22, 2026*
