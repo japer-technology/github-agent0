@@ -304,10 +304,12 @@ artifact → Job 3 (synthesis) → Final output
 
 | Scenario | Estimated Monthly Usage | GitHub Actions Cost (Free Tier) |
 |----------|------------------------|-------------------------------|
-| 50 issue interactions/month | ~25 minutes | Free (2,000 min/month included) |
-| Daily scheduled tasks | ~30 minutes | Free |
-| 200 PR reviews/month | ~100 minutes | Free |
-| Heavy usage (1000+ interactions) | ~500+ minutes | Free tier covers; beyond needs paid plan |
+| 50 issue interactions/month | ~150-250 minutes (3-5 min each with caching) | Free (2,000 min/month included) |
+| Daily scheduled tasks | ~90-150 minutes (3-5 min each) | Free |
+| 200 PR reviews/month | ~600-1000 minutes (3-5 min each) | Approaches free tier limit |
+| Heavy usage (1000+ interactions) | ~3000-5000 minutes | Exceeds free tier; requires paid plan or self-hosted runners |
+
+**Note on cold starts**: First runs without caching take 15-20 minutes for dependency installation. With Docker containers or aggressive caching, subsequent runs drop to 2-5 minutes. The estimates above assume warmed caches.
 
 **Note**: LLM API costs (OpenAI, Anthropic) are separate and typically the dominant expense.
 
